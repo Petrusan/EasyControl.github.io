@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de itens</title>
+</head>
+
+<body>
+    
+    <div class="logo">
+		<div id="area-logo">
+			<a class="navbar-brand" href="home.html">
+            </a>
+	</div>
+
+<div class="containerCadastroDeItem2">
+
+    <div class="headerCadastroDeItem">
+        
+        <h2>Menu</h2>
+        
+    </div>
+            
+        
+        <div id="form" class="form">       
+        
+                <div class="form-control"><button type="text" id="Inicio"><a href="Menu.html">Inicio</a></button></div>
+                <div class="form-control"><button type="text" id="Cadastro de itens"><a href="CadastroDeItem.html">Cadastro de itens</a></button></div>
+                <div class="form-control"><button type="text" id="Retiradda ded itens"><a href="RetiradaDeItem.html">Retirada de itens</a></button></div> 
+                <div class="form-control"><button type="text" id="Devolução de itens"><a href="DevolucaoDeItem.html">Devolução de itens</a></button></div>
+                <div class="form-control"><button type="text" id="Historico"><a href="Novapag.html">Histórico</a></button></div>
+                <div class="form-control"><button type="text" id="Novo Login"><a href="CadastroDeLogin.html">Gerar relatório</a></button></div> 
+                <div class="form-control"><button type="text" id="Ajuda"><a href="Novapag.html">Ajuda</a></button></div>
+                <div class="form-control"><button type="text" id="Desconectar"><a href="index.html">Desconectar</a></button></div>                           
+                                    
+        </div>
+</div>       
+
+
+<div class="containerCadastroDeItem1">
+
+    <div class="headerCadastroDeItem">
+
+        <h2>Cadastro de itens</h2>
+
+    </div>
+    
+
+    <div id="form" class="form">
+
+        <div class="form-control1">
+            <label for="username">Nome</label>
+            <input type="text" id="username" />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="form-control1">
+            <label for="username">Código</label>
+            <input type="text" id="username" />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="form-control1">
+            <label for="username">Quantidade</label>
+            <input type="text" id="username" />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="form-control1">
+
+            <label for="username">Seção</label>
+            <input type="text" id="username" />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="form-control1">
+
+            <label for="username">Item de consumo? </label>          
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="btn1"><input type="checkbox" name="check" onclick="onlyOne(this)">Sim</a></button></div><!--Botão de sim para iteem de consumo-->  
+        <div class="btn1"><input type="checkbox" name="check" onclick="onlyOne(this)">Não</a></button></div><!--Botão de não para itm de consumo-->  
+
+        <div class="form-control">
+            <br><label for="password">Adicionar foto</label>
+            <i class="fas fa-exclamation-circle"></i> 
+            <i class="fas fa-check-circle"></i>            
+        </div>
+<div class="btn"><button type="text" id="cadastro"><a href="Novapag.html">Upload</a></button></div><!--Botão de upload-->       
+      
+        <div class="btn"><button type="text" id="cadastro"><a href="Novapag.html">Cadastrar</a></button></div><!--Botão de cadastro--> 
+    </div>
+</div>    
+
+<script>
+    function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+</script>
+
+
+</body>
+</html>
